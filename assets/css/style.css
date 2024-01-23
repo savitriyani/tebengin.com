@@ -31,6 +31,7 @@
   --black: hsl(0, 0%, 0%);
   --onyx: hsl(240, 5%, 26%);
   --jet: hsl(0, 0%, 21%);
+  --choco: hsl(21, 100%, 12%);
 
   /**
    * gradient
@@ -438,7 +439,10 @@ body {
   pointer-events: all;
 }
 
-
+.cta-btn {
+  background-color: rgb(187, 152, 107);
+  color: var(--white);
+}
 
 
 
@@ -626,33 +630,6 @@ body {
 .project { background-color: var(--ghost-white); }
 
 .project .section-title { margin-block: 20px 60px; }
-
-.filter-list {
-  max-width: 90%;
-  margin-inline: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-block-end: 70px;
-}
-
-.filter-btn {
-  color: var(--cool-gray);
-  font-size: var(--fs-9);
-  font-weight: var(--fw-500);
-  padding: 11px 20px;
-  border-radius: var(--radius-8);
-  transition: var(--transition-1);
-}
-
-.filter-btn:is(:hover, :focus) { color: var(--raisin-black-1); }
-
-.filter-btn.active {
-  background-color: var(--white);
-  color: var(--raisin-black-1);
-  box-shadow: var(--shadow-4);
-}
 
 .project-card {
   position: relative;
@@ -964,7 +941,6 @@ body {
   }
 }
 
-
 /*-----------------------------------*\
   #NEWSLETTER
 \*-----------------------------------*/
@@ -1026,6 +1002,7 @@ body {
 
 
 
+
 /*-----------------------------------*\
   #FAQ
 \*-----------------------------------*/
@@ -1066,12 +1043,10 @@ body {
 
 .accordion .accordion-text .faq-text{
   margin-top: 25px;
-  height: 263px;
+  /* height: 263px; */
   overflow-y: auto;
 }
-.faq-text::-webkit-scrollbar{
-  display: none;
-}
+
 .accordion .accordion-text li{
   list-style: none;
   cursor: pointer;
@@ -1164,11 +1139,134 @@ body {
 }
 
 
+/* 
+  #WHATSAPP BUTTON
+*/
+.whatsappballon {
+  font-size: var(--fs-7);
+  border-radius: 12px; 
+  /* border: 1px solid #fff; */
+  max-width: 300px;
+  }
+  
+  .trwpwhatsapptitle {
+  background-color: #22c15e; 
+  color: white; 
+  padding: 14px; 
+  border-radius: 12px 12px 0px 0px;
+  /* text-align: center; */
+  }
+  
+  .trwpwhatsappmessage {
+  padding: 16px 12px;
+  background-color: white;
+  font-size: var(--fs-7);
+  display: flex;
+  }
+  
+  .trwpwhatsappinput {
+  background-color: white;
+  border-radius: 0px 0px 12px 12px;
+  }
+  
+  .trwpwhatsappinput input {
+  width: 280px;
+  border-radius: 10px;
+  margin: 1px 1px 0px 10px;
+  padding:10px;
+  font-weight: 300;
+  font-size: var(--fs-8);
+  background-color: #efefef;
+  border: 1px solid #d4d4d4;
+  }
+  
+  .whatsappbutton {
+  background-color: #22c15e; 
+  border-radius: 20px; 
+  padding: 8px 15px; 
+  cursor: pointer; 
+  display: flex;
+  color: #fff;
+  max-width: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: var(--fs-6);
+  }
+
+  .whatsappbutton ion-icon{
+    font-size: var(--fs-5);
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+  
+  .whatsappall {
+  position: fixed; 
+  z-index: 9999999999999999999; 
+  bottom: 0; 
+  right: 10px;
+  font-weight: 300;
+  font-size: var(--fs-6);
+  }
+  
+  .whatsappsendbutton {
+    color: #22c15e;
+    cursor:pointer;
+  }
+  
+  button {border: none;}
+  .whatsappsendbutton ion-icon{
+  float: right;
+  position: absolute;
+  z-index: 999999999999;
+  right: 23px;
+  top: 11;
+  bottom: 81px;
+  font-size: var(--fs-6) !important;
+  }
+  
+  .close {
+  position: absolute;
+  right: 8px;
+  top: 6px;
+  font-size: var(--fs-7);
+  /* border: 1px solid #fff;
+  border-radius: 99px; */
+  padding: 2px 5px 2px 5px;
+  margin-left: 6PX;
+  color: white;
+  font-size: 10px;
+  cursor: pointer;
+  }
 
 
+/*-----------------------------------*\
+  #SUPPORT
+\*-----------------------------------*/
 
+.support-section {
+  background-color: var(--ghost-white);
+  padding: 20px;
+  text-align: center;
+}
 
+.support-logos {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
+.support-logo {
+  max-width: 100px;
+  max-height: 100px;
+  margin: 10px;
+}
 /*-----------------------------------*\
   #BLOG
 \*-----------------------------------*/
@@ -1246,7 +1344,11 @@ body {
 .blog-card .card-title:is(:hover, :focus) { color: var(--majorelle-blue); }
 
 
-
+.tebengin-team {
+  width: 100%;
+  height: auto;
+}
+.tebengin-team .section-title { margin-block: 20px 60px; }
 
 
 /*-----------------------------------*\
@@ -1343,7 +1445,10 @@ body {
 .footer-bottom-link:is(:hover, :focus) { color: var(--mustard); }
 
 
-
+/* HERO-BANNER */
+.hero-banner{
+ max-width:767px;
+}
 
 
 /*-----------------------------------*\

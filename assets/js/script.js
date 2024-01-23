@@ -135,6 +135,16 @@ function send(){
   window.open(url, '_blank').focus();
 }
 
+// WHATSAPP BUTTON
+$(document).ready(function() {
+  $("#ackapa").click(function() {
+  $(".whatsappballon").toggle(1000);
+  });
+  $("#closeac").click(function() {
+  $(".whatsappballon").toggle(1000);
+  });
+  });
+
 /**
  *  FAQ
  * */ 
